@@ -15,9 +15,9 @@ class SendMessengerService {
         for (second in 1..3) {
             Thread.sleep(1000)
             log.info("{}초 기다림...", second)
-            throw RuntimeException("메신저 서버 오류 발생!!!!!!!!!!!!!")
+//            throw RuntimeException("메신저 서버 오류 발생!!!!!!!!!!!!!")
         }
 
-        log.info("메신저 전송 완료 = {}", target)
+        log.info("메신저 전송 완료 = {} \n", target)
     }
 }

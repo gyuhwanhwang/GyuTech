@@ -1,1 +1,13 @@
+logging:
+  level:
+    net.javacrumbs.shedlock: DEBUG
+    org.hibernate.SQL: DEBUG
 
+spring:
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:h2:tcp://localhost/~/db/test
+    driverClassName: org.h2.Driver
+    username: sa
